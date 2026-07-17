@@ -535,11 +535,11 @@ export function startRerank(ctx: RerankCtx): void {
       await applyHideSeen(); // keep already-seen items hidden after an LLM re-rank
       const secs = (totalMs / 1000).toFixed(1);
       if (moved === 0) {
-        panel.status('Detected videos but could not move them — check console.', 'error');
+        panel.status('Detected items but could not move them — check console.', 'error');
       } else if (changed === 0) {
         panel.status(`Scored ${moved}, but order was already optimal · ${secs}s`);
       } else {
-        panel.status(`Re-ranked ${moved} videos · ${secs}s`);
+        panel.status(`Re-ranked ${moved} items · ${secs}s`);
       }
       panel.showRationale(sResp.rationale);
       if (sResp.rationale) log(`↕ rationale: ${sResp.rationale}`, '#a855f7');

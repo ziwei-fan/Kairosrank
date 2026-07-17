@@ -185,7 +185,7 @@ export function mountPanel(opts: PanelOptions): PanelHandle {
         <button class="close" id="close" title="Hide">×</button>
       </div>
       <details class="ranked" id="ranked" hidden>
-        <summary id="ranked-sum">Ranked videos</summary>
+        <summary id="ranked-sum">Ranked items</summary>
         <ol class="ranked-list" id="ranked-list"></ol>
       </details>
     </div>
@@ -338,7 +338,7 @@ export function mountPanel(opts: PanelOptions): PanelHandle {
         box.setAttribute('hidden', '');
         return;
       }
-      $('ranked-sum').textContent = `Ranked videos (${rows.length}) — click to expand`;
+      $('ranked-sum').textContent = `Ranked items (${rows.length}) — click to expand`;
       list.innerHTML = rows
         .map((r) => {
           const cls = r.score >= 0.66 ? 'hi' : r.score < 0.34 ? 'lo' : '';

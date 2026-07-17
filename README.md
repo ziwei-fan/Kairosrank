@@ -3,7 +3,7 @@
 A Manifest V3 browser extension that **learns your taste on-device and silently re-ranks lists of content in place** — no page reload, no data leaving your machine by default. It re-orders the items already on the page (videos, papers, models, posts) so the ones you're most likely to want float to the top.
 
 <p align="center">
-  <img src="assets/demo.svg" alt="Kairosrank (JIT Re-Rank) learns what you like and slides the matching items to the top of the list, in place — no page reload." width="560">
+  <img src="assets/demo.gif" alt="Kairosrank (JIT Re-Rank) on a live arXiv listing: click the pill, answer one question with two options, and the papers re-rank in place — no reload." width="680">
 </p>
 
 > **Status:** research prototype. Inspired by *just-in-time information recommendation* (see [Attribution](#attribution)). Not an official product; see [License & IP](#license--ip).

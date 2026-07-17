@@ -5,6 +5,15 @@ import type { Sample, Question, Answer, BehaviorContext, PriorTurn, BehaviorRead
 
 export const SCORE_CHUNK_SIZE = 40;
 
+/** Detect the dominant script of the item titles so the model answers in the page's language. */
+function langDirective(texts: string[]): string {
+  const s = texts.join(' ');
+  const cjk = (s.match(/[㐀-鿿]/g) || []).length;
+  const latin = (s.match(/[A-Za-z]/g) || []).length;
+  const lang = cjk > latin ? 'Simplified Chinese (简体中文)' : 'English';
+  return `Respond ENTIRELY in ${lang} — the language of the items on this page. Every field (question, option labels, userStatus, reasoning, rationale) must be written in ${lang}.`;
+}
+
 export interface QuestionResult {
   questions: Question[];
   userStatus?: string;
@@ -74,6 +83,7 @@ export function buildQuestionMessage(
     .map((s, i) => `${i + 1}. ${s.title}`)
     .join('\n');
   return (
+    `${langDirective(samples.map((s) => s.title))}\n\n` +
     `Site: ${siteId}\n\n` +
     `${formatNotes(userNotes)}\n\n` +
     `${formatPriorTurns(priorTurns)}\n\n` +
@@ -107,6 +117,7 @@ export function buildScoreMessage(
   const readingText = formatReading(behaviorReading);
   const formatted = chunk.map((it, i) => `${i + 1}. ${it.title}`).join('\n');
   return (
+    `${langDirective(chunk.map((it) => it.title))}\n\n` +
     `${formatNotes(userNotes)}\n\n` +
     (readingText ? `${readingText}\n\n` : '') +
     `${formatBehavior(behavior)}\n\n` +
