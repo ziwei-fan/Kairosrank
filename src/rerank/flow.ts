@@ -104,7 +104,7 @@ export function startRerank(ctx: RerankCtx): void {
       weights,
     };
   };
-  log(`JIT Re-Rank on ${site.label}`, '#3b82f6');
+  log(`Kairosrank on ${site.label}`, '#3b82f6');
 
   let cards: Card[] = [];
   let snaps: Snapshot[] = [];

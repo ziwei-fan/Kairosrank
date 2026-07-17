@@ -1,4 +1,4 @@
-# Third-Party Notices & Attribution — JIT Re-Rank
+# Third-Party Notices & Attribution — Kairosrank (JIT Re-Rank)
 
 This project incorporates third-party software and models. This file lists them, their
 licenses, and the required attributions. It is organized by whether a component is

@@ -1,14 +1,14 @@
-# JIT Re-Rank
+# Kairosrank (JIT Re-Rank)
 
 A Manifest V3 browser extension that **learns your taste on-device and silently re-ranks lists of content in place** — no page reload, no data leaving your machine by default. It re-orders the items already on the page (videos, papers, models, posts) so the ones you're most likely to want float to the top.
 
 <p align="center">
-  <img src="assets/demo.svg" alt="JIT Re-Rank learns what you like and slides the matching items to the top of the list, in place — no page reload." width="560">
+  <img src="assets/demo.svg" alt="Kairosrank (JIT Re-Rank) learns what you like and slides the matching items to the top of the list, in place — no page reload." width="560">
 </p>
 
 > **Status:** research prototype. Inspired by *just-in-time information recommendation* (see [Attribution](#attribution)). Not an official product; see [License & IP](#license--ip).
 
-> **The name — Kairosrank.** It joins *kairos* (καιρός — the ancient Greek word for the *opportune moment* to act, as distinct from *chronos*, mere clock time) with *rank*, capturing the system's central bet: inferring the right moment to silently re-rank the page on-device.
+> **The name.** *Kairosrank* is the project name; *JIT Re-Rank* is its plain-English subtitle. *Kairosrank* joins *kairos* (καιρός — the ancient Greek word for the *opportune moment* to act, as distinct from *chronos*, mere clock time) with *rank*, capturing the system's central bet: inferring the right moment to silently re-rank the page on-device.
 
 ---
 
@@ -81,7 +81,7 @@ For live development with hot-reload: `npm run dev`.
 
 ## Configuration (Options page)
 
-`chrome://extensions` → JIT Re-Rank → **Details → Extension options**:
+`chrome://extensions` → Kairosrank (JIT Re-Rank) → **Details → Extension options**:
 
 - **Dev mode** *(default ON)* — uses mock LLM responses; **no network calls**. Turn off to use a real provider.
 - **Provider** — Anthropic (Claude) or OpenAI (ChatGPT).

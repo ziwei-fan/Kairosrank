@@ -4,7 +4,7 @@ export default defineConfig({
   srcDir: '.',
   outDir: 'dist',
   manifest: {
-    name: 'JIT Re-Rank',
+    name: 'Kairosrank (JIT Re-Rank)',
     description: 'Learn your taste on-device and silently re-rank lists in place — arXiv, Hugging Face, Hacker News, Papers with Code, and iyf.tv.',
     version: '0.4.0',
     permissions: ['storage', 'offscreen'],

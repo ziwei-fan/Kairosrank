@@ -155,12 +155,12 @@ export function mountPanel(opts: PanelOptions): PanelHandle {
       .close:hover { opacity:1; background:rgba(255,255,255,0.08); }
     </style>
     <div class="wrap collapsed" id="wrap">
-    <button class="pill" id="pill" title="JIT Re-Rank — click to re-rank this page">
+    <button class="pill" id="pill" title="Kairosrank (JIT Re-Rank) — click to re-rank this page">
       <span class="dot"></span><span class="lbl" id="pill-lbl">re-rank</span>
     </button>
     <div class="panel">
       <div class="row">
-        <span class="title">JIT Re-Rank</span>
+        <span class="title">Kairosrank (JIT Re-Rank)</span>
         <span class="badge" id="site"></span>
       </div>
       <div class="row" style="margin-top:6px">
