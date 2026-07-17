@@ -1,0 +1,19 @@
+JIT Re-Rank
+Copyright (c) 2026 <COPYRIGHT HOLDER>
+
+NOTE ON COPYRIGHT/OWNERSHIP: The copyright holder line above is intentionally a
+placeholder. Ownership of this project is subject to an unresolved question (see
+ip_provenance_and_inventorship.md). Do not finalize the copyright line or apply a
+project LICENSE asserting ownership until that question is cleared with counsel.
+
+--------------------------------------------------------------------------------
+This product bundles and redistributes the following third-party components.
+Full details, licenses, and attributions are in THIRD_PARTY_NOTICES.md.
+
+Bundled in the shipped extension:
+  - Transformers.js (@huggingface/transformers)  — Apache License 2.0 — © Hugging Face
+  - ONNX Runtime Web (onnxruntime-web)            — MIT License        — © Microsoft Corporation
+  - paraphrase-multilingual-MiniLM-L12-v2 (model) — Apache License 2.0 — sentence-transformers (UKP Lab); ONNX conversion by Xenova (Hugging Face)
+
+Conceptual inspiration (concept only — no code or data used):
+  - JIR-Arena (Yang, Ros, Senthil Kumar, Zhai), arXiv:2505.13550, 2025.

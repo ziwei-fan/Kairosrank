@@ -1,0 +1,42 @@
+node_modules
+.wxt
+.output
+dist
+*.log
+.DS_Store
+
+# local secrets — never commit
+.anthropic-key
+
+# large bundled ML assets — not committed; run `npm run fetch-assets` (see README)
+/public/models/
+/public/ort/
+
+# sensitive — IP / inventorship memo, kept local, not for the public repo
+/ip_provenance_and_inventorship.md
+
+# internal research & planning artifacts (kept local, not uploaded)
+/jir_survey_report.md
+/on_device_question_gen_report.md
+/just_in_time_agent_survey.md
+/jir_annotated_bibliography.csv
+/jit-rerank-overview.html
+/jit_agent_requirements.md
+/jit_early_phase_todos.md
+
+# parked prototype — dead R3/R4 code
+/parked/
+
+# local editor / agent tooling (Claude Code) — not part of the project
+/.claude/
+
+# one-off dev/probe scripts — upload only the e2e + measurement scripts the docs reference
+/scripts/*
+!/scripts/fetch-assets.mjs
+!/scripts/silent-e2e.mjs
+!/scripts/research-e2e.mjs
+!/scripts/research-func-e2e.mjs
+!/scripts/error-scan.mjs
+!/scripts/latency-ondevice.mjs
+!/scripts/latency-cloud.mjs
+!/scripts/func-correctness-cloud.mjs

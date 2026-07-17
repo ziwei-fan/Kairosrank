@@ -1,0 +1,24 @@
+{
+  "name": "jit-rerank",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "fetch-assets": "node scripts/fetch-assets.mjs",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "wxt prepare && tsc --noEmit",
+    "test": "vitest run",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "@types/chrome": "^0.1.40",
+    "happy-dom": "^20.9.0",
+    "playwright": "^1.61.1",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.4",
+    "wxt": "^0.20.0"
+  }
+}
