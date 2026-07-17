@@ -8,6 +8,8 @@ A Manifest V3 browser extension that **learns your taste on-device and silently 
 
 > **Status:** research prototype. Inspired by *just-in-time information recommendation* (see [Attribution](#attribution)). Not an official product; see [License & IP](#license--ip).
 
+> 📄 **Technical report:** [**`KAIROSRANK.pdf`**](KAIROSRANK.pdf) — the full write-up (motivation, method, and evaluation).
+
 > **The name.** *Kairosrank* is the project name; *JIT Re-Rank* is its plain-English subtitle. *Kairosrank* joins *kairos* (καιρός — the ancient Greek word for the *opportune moment* to act, as distinct from *chronos*, mere clock time) with *rank*, capturing the system's central bet: inferring the right moment to silently re-rank the page on-device.
 
 ---
